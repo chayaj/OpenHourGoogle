@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- constants -->
+    <string name="app_name">Open Hour</string>
+    <string name="menu_settings">Settings</string>
+    <string name="app_ic_title">Z Open Hour</string>
+    <string name="restaurant">restaurant</string>
+
+    <!-- Latitude, longitude format -->
+    <string name="latitude_longitude">%1$.8f, %2$.8f</string>
+
+    <!-- Message for Display -->
+    <string name="msg_map">Map</string>
+    <string name="msg_list">List</string>
+    <string name="msg_restaurant">Restaurant</string>
+    <string name="msg_current_location">Current Location</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_na">N/A</string>
+    <string name="msg_open">Open</string>
+    <string name="msg_close">Close</string>
+    <string name="msg_search">Search</string>
+    <string name="msg_no_result_found">Sorry we did not find any match result</string>
+    <string name="msg_google_place_api_error">Sorry we could not search at this time. Please try again.</string>
+    <string name="msg_no_location_found">We did not recognize that location</string>
+    <string name="msg_loading">Loading...</string>
+
+    <!-- Message for Debug -->
+    <string name="play_services_available">Google Play services is available</string>
+    <string name="IO_Exception_getFromLocationName">IO Exception getFromLocationName()</string>
+    <string name="google_api_connection_error">Google Place API Connection Error</string>
+    <string name="illegal_address">Illegal Address</string>
+    <string name="internet_connection_error">Internet Connection Error</string>
+
+    <!-- Google API Status -->
+    <string name="status_ok">OK</string>
+    <string name="status_zero_results">ZERO_RESULTS</string>
+    <string name="status_over_query_limit">OVER_QUERY_LIMIT</string>
+    <string name="status_request_denied">REQUEST_DENIED</string>
+    <string name="status_invalid_request">INVALID_REQUEST</string>
+    <string name="status_unknown_error">UNKNOWN_ERROR</string>
+
+</resources>

@@ -1,0 +1,8 @@
+This is an android mobile application that allow users to search for nearby restaurants at specify location.
+----------------------------------------------------
+
+TODO
+1. Replace the Google API key in util/LocationUtils.java
+
+Legal Notices
+Google Play Services

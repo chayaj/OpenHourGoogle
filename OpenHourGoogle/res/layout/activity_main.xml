@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_top_menu"
+                    android:layout_alignParentTop="true"
+                    android:background="#ff4e40" >
+
+        <ImageView android:id="@+id/tv_logo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_launcher"
+                  android:layout_gravity="center_horizontal">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/ll_search_area"
+                  android:layout_below="@id/ll_top_menu"
+                  android:background="#fff63b">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:id="@+id/ll_et_search_area" android:layout_weight="2" android:layout_margin="5dp">
+
+                <!-- Search Area -->
+                <EditText android:id="@+id/et_search"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/msg_restaurant">
+                </EditText>
+
+                <EditText android:id="@+id/et_near"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/msg_current_location"
+                          android:layout_below="@+id/et_search">
+                </EditText>
+
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/msg_search"
+                android:onClick="getSearch"
+                android:layout_below="@+id/et_near"
+                android:layout_alignParentRight="true" android:layout_margin="5dp"
+                >
+        </Button>
+
+    </LinearLayout>
+
+    <!--
+    <Button android:id="@+id/btn_show_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Places on Map"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip" android:layout_alignParentBottom="false"/>
+        -->
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_above="@+id/btn_show_map"
+                    android:layout_below="@+id/ll_search_area">
+
+            <!--  List view -->
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_show_map"/>
+
+    </RelativeLayout>
+
+    <!-- Show on Map button -->
+    <Button android:id="@+id/btn_show_map"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_map"
+            android:onClick="getMap"
+            android:layout_alignParentBottom="true"/>
+
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_bottom_menu"
+                    android:layout_alignParentBottom="true">
+
+                <Button android:id="@+id/btn_prev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:layout_weight="1"/>
+                <Button android:id="@+id/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:layout_weight="1"/>
+    </LinearLayout>
+    -->
+
+</RelativeLayout>
